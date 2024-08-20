@@ -1,0 +1,22 @@
+.title {
+
+}
+
+.right_ss {
+    .portrait_ctr {
+        // TODO: These should be properties of the underlying image.
+        width: 16vw;
+        aspect-ratio: 0.7;
+
+        margin: 50px auto 0 auto;
+        background: rgb(60, 60, 60);
+        border: 2px solid var(--common-border-color);
+    }
+    .caption {
+        margin-top: 15px;
+        padding-left: 16px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
