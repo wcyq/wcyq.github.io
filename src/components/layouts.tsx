@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import cstyle from "@/styles/common.module.scss";
 
-import cstyle from "styles/common.module.scss";
+import type { ReactNode } from "react";
 
-import { classes } from "src/helpers";
+import { classes } from "@/helpers";
 
 import { Header } from "./partials"
 

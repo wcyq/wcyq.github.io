@@ -1,11 +1,11 @@
-import cstyle from "styles/common.module.scss";
+import cstyle from "@/styles/common.module.scss";
 import style from "./page.module.scss";
-
-import { classes } from "src/helpers";
-import { StandardLayout } from "src/components/layouts";
 
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
+
+import { classes } from "@/helpers";
+import { StandardLayout } from "@/components/layouts";
 
 
 export default function Page() {

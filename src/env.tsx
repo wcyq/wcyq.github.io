@@ -1,6 +1,11 @@
+export const info = {
+    bio_name_trunc: "Connor Yates",
+    bio_name_full: "Wanlace Connor Yates",
+    bio_title: "Software Developer",
+}
 
 export const meta = {
-    title: "W. Connor Yates",
+    title: info.bio_name_trunc,
 };
 
 export const header = {

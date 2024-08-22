@@ -1,19 +1,18 @@
-import cstyle from "styles/common.module.scss";
+import cstyle from "@/styles/common.module.scss";
 import style from "./page.module.scss";
 
+import Image from "next/image";
+
+import { info } from "@/env";
 import { classes } from "@/helpers";
 import { StandardLayout } from "@/components/layouts";
 import { LinkButton, BioLinkInfo } from "@/components/partials";
 
-import Image from "next/image";
-
-import portrait from "public/static/images/portrait.png";
-
 import { biolinks } from "@/links";
+import portrait from "public/static/images/portrait.png";
 
 
 function BioLinkBoard(args: BioLinkInfo[]) {
-    // TODO: use biolinks instead of hardcoded buttons
     var key_iter = 0;
     return (
         <div className="flex flex-row justify-center">
@@ -36,7 +35,7 @@ export default function Page() {
                             <Image src={portrait} fill={true} alt="Avatar" priority={true}/>
                         </div>
                         <div className={style.portrait_below}>
-                            <h1>Wanlace Connor Yates</h1>
+                            <h1>{info.bio_name_full}</h1>
                             {BioLinkBoard(biolinks)}
                         </div>
                     </div>

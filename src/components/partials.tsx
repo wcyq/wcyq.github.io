@@ -1,4 +1,4 @@
-import style from "styles/partials.module.scss";
+import style from "@/styles/partials.module.scss";
 
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';

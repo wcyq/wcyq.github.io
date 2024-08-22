@@ -1,7 +1,7 @@
-import "styles/globals.css";
+import "@/styles/globals.css";
 import style from "./layout.module.scss";
 
-import { meta } from "src/env";
+import { meta } from "@/env";
 
 export const metadata = {
     title: meta.title,
