@@ -54,7 +54,11 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        # TODO: Remove this once [https://github.com/actions/configure-pages/issues/44] is merged.
+        # Use PR repo [https://github.com/actions/configure-pages/pull/161] until patch is merged
+        # due to wrapping support not passed in the stock action.
+        uses: sainsburys-tech/configure-pages@ba7d7057854f4120c841ec77167c99fb5ac74106
+        #uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
